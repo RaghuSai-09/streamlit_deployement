@@ -1,0 +1,4 @@
+apt-get streamlit1.11.1
+apt-get pandas1.4.2
+apt-get nltk3.7
+apt-get pickle4.0

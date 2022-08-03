@@ -1,4 +1,0 @@
-Streamlit ==1.11.1
-pandas==1.4.2
-nltk==3.7
-pickle==4.0
