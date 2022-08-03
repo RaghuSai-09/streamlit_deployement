@@ -21,7 +21,7 @@ ps = PorterStemmer()
 
 #loading dataset 
 
-df = pd.read_csv("D:/AI_DeepLearning/Spam_Classifier/data.csv")
+df = pd.read_csv("data.csv")
 result_df = df.melt('Model', var_name='Metrix', value_name='value')
 
 
@@ -52,9 +52,9 @@ def transform_text(text):
 
 
  
-tfidf = pickle.load(open('D:/AI_DeepLearning/Spam_Classifier/vectorizer.pkl','rb'))
-model1 = pickle.load(open('D:/AI_DeepLearning/Spam_Classifier/BNB_model.pkl','rb'))
-model2 = pickle.load(open('D:/AI_DeepLearning/Spam_Classifier/MNB_model.pkl','rb'))
+tfidf = pickle.load(open('vectorizer.pkl','rb'))
+model1 = pickle.load(open('BNB_model.pkl','rb'))
+model2 = pickle.load(open('MNB_model.pkl','rb'))
 
 # selecting model from selectbox
 st.sidebar.title('MODEL')
