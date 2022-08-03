@@ -22,7 +22,7 @@ ps = PorterStemmer()
 #loading dataset 
 
 df = pd.read_csv("data.csv")
-result_df = df.melt('Model', var_name='Metrix', value_name='value')
+dataset_df = pd.read_csv("Dataset.csv")
 
 
 
@@ -84,9 +84,14 @@ if st.button('Predict'):
     else:
         st.header("Not Spam/Ham")
         
-st.write(df) 
 
 
+st.write('')
+st.header('Dataset')
+st.write(dataset_df)
+st.write('')
+st.header('Result')
+st.write(df)
 
 st.title("Accuracy Comparison Plot")
 fig = px.bar(df,x='Model',y='Accuracy',color='Model',range_y=(0.5,1.2))
