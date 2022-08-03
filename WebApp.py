@@ -11,6 +11,7 @@ import pandas as pd
 import string
 from nltk.corpus import stopwords
 import nltk
+nltk.download('punkt')
 from nltk.stem.porter import PorterStemmer
 
 import plotly.express as px
