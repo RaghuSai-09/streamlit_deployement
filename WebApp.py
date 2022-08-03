@@ -88,12 +88,7 @@ if st.button('Predict'):
 st.write(df) 
 
 
-#sns.catplot(x = 'Model', y='value',hue='Metrix', 
-#               data=result_df, kind='bar',height=5)
-#plt.title("Model Comparison")
-#plt.ylim(0.5,1.2)
-#plt.xticks(rotation='horizontal')
-#plt.show()
+
 st.title("Accuracy Comparison Plot")
 fig = px.bar(df,x='Model',y='Accuracy',color='Model',range_y=(0.5,1.2))
 st.write(fig)
