@@ -1,6 +1,6 @@
- streamlit==1.11.1
+ streamlit
  pandas
- nltk==3.7
- plotly==5.6
+ nltk
+ plotly
 scikit-learn
 
