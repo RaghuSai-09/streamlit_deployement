@@ -11,7 +11,7 @@ import pandas as pd
 import string
 from nltk.corpus import stopwords
 import nltk
-nltk.download('punkt')
+nltk.download('punkt_tab')
 nltk.download('stopwords')
 from nltk.stem.porter import PorterStemmer
 
@@ -106,3 +106,4 @@ st.write(fig1)
 st.title('Accuracy Vs Precision')
 fig2 = px.line(df,x='Model',y=['Accuracy', 'Precision'],labels={'x':'Model','y':'Value'},range_y=(0.3,1.2))
 st.write(fig2)
+
